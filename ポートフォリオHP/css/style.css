@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+html {
+
+}
+* {
+    margin:0;
+}
+
+body {
+    font-family: serif;
+}
+
+/*****************/
+/*ヘッダーここから*/
+/*****************/
+header {
+    background-color: black;
+    padding-bottom: 10px;
+    color: white;
+}
+
+header .flex {
+    display: flex;
+    justify-content: center;
+}
+
+header .img {
+    position: absolute;
+    left: 0;
+}
+
+header .icon {
+    position: absolute;
+    right: 0;
+}
+
+header strong {
+    font-family: serif;
+    font-size: 30px;
+    
+}
+
+/*****************/
+/*ヘッダーここまで*/
+/*****************/
+
+/***************/
+/*メインここから*/
+/***************/
+
+main {
+    text-align: center;
+
+}
+
+main .flex {
+    display: flex;
+}
+
+main .content {
+    transition: 0.5s;
+    
+}
+
+main .content:hover {
+    background-color:lightslategray;
+    border-radius: 100px;
+}
+
+main h1 {
+    text-align: center;
+    font-family: serif;
+}
+
+main h2 {
+    text-align: center;
+    font-family: serif;
+}
+
+main p {
+    font-size: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main img {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+    border: 5px solid lightgray;
+}
+
+/***************/
+/*メインここまで*/
+/***************/
+
+/****************/
+/*フッターここから*/
+/****************/
+footer {
+    background-color: gray;
+    color: white;
+    font-family: serif;
+    
+}
+
+footer div {
+    font-size: 15px;
+    text-align: left;
+}
+
+/****************/
+/*フッターここまで*/
+/****************/
+
+@media screen and (max-width: 600px){
+    main .flex {
+        flex-direction: column;
+    }
+}
